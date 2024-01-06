@@ -96,12 +96,19 @@
       border-radius: 10px;
    }
 
-   #email:valid {
+   #email:valid, #zipcode:valid {
       border-color: green;
    }
 
-   #email:invalid {
+   #email:invalid, #zipcode:invalid {
       border-color: red;
+   }
+
+   .error {
+      color: red;
+      box-shadow: 2px;
+      font-size: 12px;
+      width: 100%;
    }
 
    #form-submit {

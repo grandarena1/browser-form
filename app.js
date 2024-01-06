@@ -38,16 +38,26 @@ function validateForm(type) {
 
 function validateEmail() {
     if(!input_email.checkValidity()) {
-        
+        const err = document.getElementsByClassName('error')[0];
+        err.style.color = 'red';
+        err.style.textAlign = 'center';
+        err.textContent = "Please enter a valid email address";
     }   
+    else {
+        resetError(0);
+    }
 }
 
 function validateCountry() {
+    if(!input_country.value) {
 
+    }
 }
 
 function validateZipcode() {
+    if(!input_zipcode.checkValidity()) {
 
+    }
 }
 
 function validatePassword(type) {
@@ -55,10 +65,16 @@ function validatePassword(type) {
 
     }
     else if(type === 'confirmation') {
-        
+
     }
 }
 
 function submitForm() {
 
+}
+
+function resetError(number) {
+    const errors = document.querySelectorAll('.error');
+    errors[number].style.color = 'green';
+    errors[number].textContent = "✓";
 }
