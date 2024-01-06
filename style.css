@@ -17,6 +17,11 @@
     grid-template-rows: 1fr 5fr;
    }
 
+   hr.solid {
+      border: 1px solid #7372c28c;
+      width: 100%;
+    }
+
    /* Header */
    header {
     display: flex;
@@ -34,7 +39,7 @@
     color: white;
    }
 
-   /* Form */
+   /* Form container */
    .form-container {
     width: 100%;
     height: 100%;
@@ -44,9 +49,73 @@
    }
 
    .form {
-    width: 30%;
+    min-width: 500px;
+    max-width: 500px;
     height: 90%;
     background-color: #04183d;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: column;
+   }
+
+   #account-form {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr repeat(4, 1fr);
+      justify-items: center;
+      align-items: center;
+   }
+
+   /* Form fields */
+   .form-title {
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      letter-spacing: 3px;
+      font-weight: 800;
+      background-color: #001233;
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 100%;
+   }
+
+   .form-email, .form-country, .form-zipcode, .form-password {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      width: 300px;
+      padding: 15px;
+      border-radius: 10px;
+   }
+
+   input {
+      padding: 5px;
+      margin-bottom: 20px;
+      background-color: #001233;
+      border-radius: 7px;
+      border: 1px solid #7372c28c;
+      color: white;
+      font-weight: bold;
+   }
+
+   option, select {
+      margin-bottom: 20px;
+      background-color: #001233;
+      border-radius: 7px;
+      border: 1px solid #7372c28c;
+      color: white;
+      font-weight: bold;
+   }
+
+   label {
+      letter-spacing: 2.25px;
+      font-weight: 800;
+      margin-bottom: 4px;
    }
