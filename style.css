@@ -96,11 +96,11 @@
       border-radius: 10px;
    }
 
-   #email:valid, #zipcode:valid {
+   #email:valid, #country:valid, #zipcode:valid {
       border-color: green;
    }
 
-   #email:invalid, #zipcode:invalid {
+   #email:invalid, #country:invalid, #zipcode:invalid {
       border-color: red;
    }
 
