@@ -96,12 +96,8 @@
       border-radius: 10px;
    }
 
-   #email:valid, #country:valid, #zipcode:valid {
+   #country:valid {
       border-color: green;
-   }
-
-   #email:invalid, #country:invalid, #zipcode:invalid {
-      border-color: red;
    }
 
    .error {
@@ -140,8 +136,44 @@
       letter-spacing: 1.25px;
    }
 
+   #email:-webkit-autofill {
+      background-color: #001233 !important;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: #fff !important;
+  }
+
    label {
       letter-spacing: 2.25px;
       font-weight: 800;
       margin-bottom: 4px;
+   }
+
+   .submitted {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .submitted-form-text {
+      color: white;
+      font-weight: 800;
+      font-size: 40px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   .checkmark {
+      font-size: 60px;
+      color: green;
+   }
+
+   .hidden {
+      display: none;
    }

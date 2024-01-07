@@ -13,6 +13,12 @@
             <h1>BROWSER FORM</h1>
         </header>
         <div class="form-container">
+            <div class="submitted hidden">
+                <h2 class="submitted-form-text">
+                    Form submitted successfully<br>
+                    <span class="checkmark">✓</span>
+                </h2>
+            </div>
             <div class="form">
                 <form id="account-form">
                     <div class="form-title">
@@ -26,7 +32,7 @@
                     </div>
                     <div class="form-country">
                         <label for="country">COUNTRY:</label>
-                        <select id="country" name="country" class="form-control" placeholder="Choose your country" required>
+                        <select id="country" name="country" class="form-control"  required>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
@@ -256,7 +262,7 @@
                             <option value="Uganda">Uganda</option>
                             <option value="Ukraine">Ukraine</option>
                             <option value="United Arab Emirates">United Arab Emirates</option>
-                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United Kingdom" selected>United Kingdom</option>
                             <option value="United States">United States</option>
                             <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
                             <option value="Uruguay">Uruguay</option>
