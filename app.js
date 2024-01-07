@@ -67,12 +67,18 @@ function validatePassword() {
     if(input_password.value.length > 3 || input_password_confirmation.value.length > 3) {
         if(input_password_confirmation.value !== input_password.value) {
             formatError(3, 'Please make sure both fields match');
+            input_password.style.borderColor = 'red';
+            input_password_confirmation.style.borderColor = 'red';
         }
         else {
             resetError(3);
+            input_password.style.borderColor = 'green';
+            input_password_confirmation.style.borderColor = 'green';
         }
     }
     else {
+        input_password.style.borderColor = 'red';
+        input_password_confirmation.style.borderColor = 'red';
         formatError(3, 'Please enter a password more than 3 characters');
     }
 }
